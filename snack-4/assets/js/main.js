@@ -1,29 +1,31 @@
 //*Snack4 (Bonus)*
-//Crea due array che hanno un numero di elementi diversi.  Aggiungi elementi all’array che ha meno elementi fino a quando ne avrà tanti quanti l’altro.
+//In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+//Interrompi il ciclo appena il nome è stato trovato.
 
 
 
-let arrayFirst = [1,2,3,4,5,];
+const partyName = ["luca","marco","lucia"];
+let nomeUtente = parseInt(prompt("inserisci il tuo nome"));
 
-let arraySecond = [];
+let soldat = true;
 
-let number = 0;
+for (let i = 0 ; i < partyName.length ; i++){
+      if (nomeUtente == partyName[i] ){
+        soldat = true;
+        
 
+      }else{
+        soldat = false;
+        
+    }
 
-
-let differenzaArray = arrayFirst.length - arraySecond.length;
-
-for ( i = 0; i < differenzaArray ; i++ ){
-   
-    number = Math.floor(Math.random() * 10);
-    arraySecond.push(number);
-    
+    if (soldat == true ){
+        console.log("presente")
+    }else{
+        console.log("non-presente") 
+    }
 }
 
-console.log(arraySecond);
 
-
-//let arrayNewNumbers = arraySecond.push(5,4,3,2,1);
-//console.log(arraySecond);
-
+   
 
