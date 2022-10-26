@@ -7,14 +7,16 @@
 //farne un ciclo e terminarlo al 5 giro
 //somma i numeri ottenuti
 
-let numeroUtente = parseInt(prompt("inserisci un numero"));
-console.log(numeroUtente);
+let numeroUtente = 0;
+
 
 let sum = 0;
 
 let i = 0;
-if ( numeroUtente > 0 ){
-    
+while (i < 5){
+    numeroUtente = parseInt(prompt("inserisci un numero"));
+    console.log(numeroUtente);
+   i++
 }
 
   
