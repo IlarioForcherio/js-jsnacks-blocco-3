@@ -5,26 +5,31 @@
 
 
 const partyName = ["luca","marco","lucia"];
-let nomeUtente = parseInt(prompt("inserisci il tuo nome"));
 
-let soldat = true;
 
-for (let i = 0 ; i < partyName.length ; i++){
-      if (nomeUtente == partyName[i] ){
-        soldat = true;
-        
 
-      }else{
-        soldat = false;
-        
-    }
 
-    if (soldat == true ){
-        console.log("presente")
-    }else{
-        console.log("non-presente") 
-    }
+
+while (true){
+  
+  let nome = prompt("inserisci nome");
+  
+  const verify = partyName.includes(nome);
+  
+
+  
+  if (verify === true){
+    console.log("puoi partecipare")
+  }else if (verify === false) {
+    console.log("non puoi partecipare")
+    break;
+   
+  }
+  
 }
+
+
+
 
 
    
