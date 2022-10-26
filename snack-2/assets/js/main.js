@@ -15,8 +15,10 @@ let sum = 0;
 let i = 0;
 while (i < 5){
     numeroUtente = parseInt(prompt("inserisci un numero"));
-    console.log(numeroUtente);
+    
+    sum = sum + numeroUtente;
    i++
 }
+console.log(sum);
 
   
